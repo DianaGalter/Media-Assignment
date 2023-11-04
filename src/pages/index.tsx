@@ -1,26 +1,7 @@
 import Head from 'next/head';
 import { Heading, Carousel, Breadcrumbs, Description, InfoBlock } from '@/components';
+import { headingData, descriptionData, carouselData, breadcrumbsData } from './data';
 
-const headingProps = {
-  title: 'Toyota Land Cruiser, 2020',
-  subtitle: 'Южно-Сахалинск',
-  statistics: {
-    views: '344 (+11 сегодня)',
-    favorites: '87 (+2 сегодня)'
-  }
-};
-
-const descriptionProps = {
-  title: '',
-  list: [{
-    name: '',
-    value: ''
-  },
-  {
-    name: '',
-    value: ''
-  }]
-}
 
 export default function Home() {
 
@@ -33,11 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Breadcrumbs></Breadcrumbs>
-        <Heading headingProps={headingProps} />
-        <Carousel></Carousel>
+        <Breadcrumbs breadcrumbsProps={breadcrumbsData}></Breadcrumbs>
+        <Heading headingProps={headingData} />
+        <Carousel carouselProps={carouselData}></Carousel>
         <InfoBlock></InfoBlock>
-        <Description descriptionProps={descriptionProps}/>
+        <Description descriptionProps={descriptionData}/>
       </main>
     </>
   )

@@ -1,4 +1,11 @@
-export const Carousel = ({}) => {
+type CarouselType = {
+  carouselProps: {
+    showMore: string;
+  }
+}
 
-    return <></>;
+export const Carousel = ({ carouselProps }: CarouselType) => {
+  const { showMore } = carouselProps;
+
+  return <>{ showMore }</>;
 };
