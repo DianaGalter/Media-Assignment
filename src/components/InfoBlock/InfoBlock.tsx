@@ -18,6 +18,9 @@ type infoDataProps = {
   }
 }
 
+/**
+ * Card with the information about the item and it's seller.
+ */
 export const InfoBlock = ({ infoData }: infoDataProps) => {
   const { offer, seller } = infoData;
 

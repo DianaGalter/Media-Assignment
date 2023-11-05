@@ -9,6 +9,9 @@ type sellerProps = {
   }
 }
 
+/**
+ * Seller's name, short description and logo.
+ */
 export const Seller = ({ seller }: sellerProps) => {
   const { title, name, ads } = seller;
 

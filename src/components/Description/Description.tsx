@@ -10,6 +10,10 @@ type DescriptionProps = {
     list: listProps[][];
   }
 }
+
+/**
+ * Description block: details and specification.
+ */
 export const Description = ({ descriptionProps }: DescriptionProps) => {
   const { title, list } = descriptionProps;
 

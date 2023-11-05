@@ -10,6 +10,9 @@ type HeadingProps = {
   };
 };
 
+/**
+ * Block title: item description, address, demands.
+ */
 export const Heading = ({ headingData } : HeadingProps) => {
   const { title, address, statistics: {views, favorites} } = headingData;
 

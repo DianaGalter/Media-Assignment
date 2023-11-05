@@ -2,6 +2,9 @@
 import Image from "next/image";
 import { ButtonStackRoot, Button } from "./styles";
 
+/**
+ * Button stack for interaction with an offer.
+ */
 export const ButtonStack = ({}) => {
 
   return (

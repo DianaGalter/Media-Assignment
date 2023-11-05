@@ -8,6 +8,9 @@ type offerProps = {
   }
 }
 
+/**
+ * Offer information: price, estimation, contacts.
+ */
 export const Offer = ({ offer }: offerProps) => {
   const { price, tag, buttonText } = offer;
 

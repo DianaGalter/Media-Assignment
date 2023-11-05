@@ -7,6 +7,9 @@ type GalleryProps = {
   }
 }
 
+/**
+ * Sample gallery with item's images.
+ */
 export const Gallery = ({ galleryData }: GalleryProps) => {
   const { showMore } = galleryData;
 

@@ -4,6 +4,9 @@ type breadcrumbsProps = {
   breadcrumbsData: string[];
 }
 
+/**
+ * Breadcrumbs: mocked as there is no router in this sample.
+ */
 export const Breadcrumbs = ({ breadcrumbsData }: breadcrumbsProps) => {
 const breadcrumbsLength = breadcrumbsData.length - 1;
   return (
