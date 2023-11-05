@@ -14,7 +14,7 @@ export const Chevron = styled(Image)`
   vertical-align: middle;
 `;
 
-export const Breadcrumb = styled.span<Breadcrumb>`
+export const Breadcrumb = styled.a<Breadcrumb>`
   color: ${props => props.active ? '#25292D' : '#58626B'};
   font-size: 14px;
   line-height: 22px;

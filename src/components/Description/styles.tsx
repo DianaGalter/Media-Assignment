@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Root = styled.div`
-  display: flex;
   color: #25292D;
+  display: flex;
   width: 1024px;
 
   @media (min-width: 1800px) {
@@ -11,13 +11,13 @@ export const Root = styled.div`
 `;
 
 export const TitleBlock = styled.div`
-  display: flex;
-  width: 232px;
   align-items: flex-start;
-  gap: 10px;
+  display: flex;
   font-size: 20px;
   font-weight: 500;
+  gap: 10px;
   line-height: 28px;
+  width: 232px;
 
   @media (min-width: 1800px) {
     width: 280px;
@@ -25,11 +25,11 @@ export const TitleBlock = styled.div`
 `;
 
 export const Block = styled.div`
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  display: flex;
   flex: 1 0 0;
+  flex-direction: column;
+  gap: 8px;
 `;
 
 export const Item = styled.span`

@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
 export const Root = styled.div`
-  display: flex;
-  width: 1024px;
-  height: 456px;
   align-items: flex-start;
-  gap: 6px;
-  flex-shrink: 0;
-  overflow: hidden;
   border-radius:24px;
+  display: flex;
+  flex-shrink: 0;
+  gap: 6px;
+  height: 456px;
   margin: 20px 0;
+  overflow: hidden;
+  width: 1024px;
 
   @media (min-width: 1800px) {
     gap: 8px;
@@ -18,14 +18,14 @@ export const Root = styled.div`
 `;
 
 export const Slider = styled.div`
-  display: flex;
-  height: 456px;
-  width: 624px;
-  flex-direction: column;
   align-items: flex-start;
-  flex-shrink: 0;
   align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 456px;
   position: relative;
+  width: 624px;
 
   @media (min-width: 1800px) {
     height: 520px;
@@ -34,13 +34,13 @@ export const Slider = styled.div`
 `;
 
 export const SliderWrapper = styled.div`
-  display: flex;
-  width: 624px;
-  padding: 0px 12px;
-  justify-content: space-between;
   align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 12px;
   position: absolute;
   top: 240px;
+  width: 624px;
 
   @media (min-width: 1800px) {
     width: 732px;
@@ -48,27 +48,25 @@ export const SliderWrapper = styled.div`
 `;
 
 export const Control = styled.div`
-  display: flex;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-
-  border-radius: 100px;
   background: #FFF;
-
+  border-radius: 100px;
   box-shadow: 0px 2px 2px 0px rgba(16, 30, 44, 0.04), 0px 4px 12px 0px rgba(16, 30, 44, 0.08);
+  display: flex;
+  flex-shrink: 0;
+  height: 40px;
+  justify-content: center;
+  padding: 8px;
+  width: 40px;
 `;
 
 export const ImageList = styled.div`
-  display: flex;
   align-items: flex-start;
-  gap: 6px 6px;
-  flex: 1 0 0;
   align-self: stretch;
+  display: flex;
+  flex: 1 0 0;
   flex-wrap: wrap;
+  gap: 6px 6px;
   position: relative;
 
   @media (min-width: 1800px) {
@@ -77,8 +75,8 @@ export const ImageList = styled.div`
 `;
 
 export const ImageItem = styled.div`
-  position: relative;
   height: 148px;
+  position: relative;
   width: 194px;
 
   @media (min-width: 1800px) {
@@ -88,18 +86,19 @@ export const ImageItem = styled.div`
 `;
 
 export const ShowMore = styled.button`
-  right: 0;
-  bottom: 0;
-  height: 148px;
-  width: 194px;
-  position: absolute;
   background: #03143799;
-  text-align: center;
+  border: none;
+  bottom: 0;
+  color: #fff;
+  cursor: pointer;
   font-size: 14px;
   font-weight: 500;
+  height: 148px;
   line-height: 22px;
-  color: #fff;
-  border: none;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 194px;
 
   @media (min-width: 1800px) {
     height: 168px;
