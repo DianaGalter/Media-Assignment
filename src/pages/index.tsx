@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { Golos_Text } from 'next/font/google';
 import { Heading, Gallery, Breadcrumbs, Description, InfoBlock } from '@/components';
-import { headingData, descriptionData, galleryData, breadcrumbsData, infoData } from './data';
+import { headingData, descriptionData, galleryData, breadcrumbsData, infoData } from '../components/data';
 import styled from '@emotion/styled';
 
 const Container = styled.div`

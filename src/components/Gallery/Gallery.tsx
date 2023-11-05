@@ -18,7 +18,7 @@ export const Gallery = ({ galleryData }: GalleryProps) => {
       <Slider>
         <Image
           src="/assets/Gallery/1.png"
-          layout="fill"
+          fill={true}
           alt="Car image"
         />
         <SliderWrapper>
@@ -44,42 +44,42 @@ export const Gallery = ({ galleryData }: GalleryProps) => {
         <ImageItem>
           <Image
             src="/assets/Gallery/2.png"
-            layout="fill"
+            fill={true}
             alt="Car image preview"
           />
         </ImageItem>
         <ImageItem>
           <Image
             src="/assets/Gallery/3.png"
-            layout="fill"
+            fill={true}
             alt="Car image preview"
           />
         </ImageItem>
         <ImageItem>
           <Image
             src="/assets/Gallery/4.png"
-            layout="fill"
+            fill={true}
             alt="Car image preview"
           />
         </ImageItem>
         <ImageItem>
           <Image
             src="/assets/Gallery/5.png"
-            layout="fill"
+            fill={true}
             alt="Car image preview"
           />
         </ImageItem>
         <ImageItem>
           <Image
             src="/assets/Gallery/6.png"
-            layout="fill"
+            fill={true}
             alt="Car image preview"
           />
         </ImageItem>
         <ImageItem>
           <Image
             src="/assets/Gallery/7.png"
-            layout="fill"
+            fill={true}
             alt="Car image preview"
           />
         </ImageItem>
