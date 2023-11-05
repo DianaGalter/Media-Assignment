@@ -7,14 +7,14 @@ const SellerBlock = styled.div`
 `;
 
 const Title = styled.span`
-  color: var(--text-text-gray-light, #969CA2);
+  color: #969CA2;
 
   font-size: 14px;
   line-height: 22px;
 `;
 
 const Name = styled.span`
-  color: var(--text-text-base, #25292D);
+  color: #25292D;
 
   font-size: 18px;
   font-weight: 500;
@@ -22,7 +22,7 @@ const Name = styled.span`
 `;
 
 const Ads = styled.a`
-  color: var(--primary-primary-text, #0D4FDC);
+  color: #0D4FDC;
 
   font-size: 14px;
   font-weight: 500;

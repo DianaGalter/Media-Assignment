@@ -7,16 +7,16 @@ const ButtonStackBlock = styled.div`
 
 const Button = styled.button`
   display: flex;
-  padding: var(--space-12, 12px);
+  padding: 12px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--space-4, 4px);
+  gap: 4px;
   flex: 1 0 0;
 
-  border-radius: var(--border-radius-12, 12px);
-  border: 1px solid var(--border-border-base, #D3D6D9);
-  background: var(--background-bg-white, #FFF);
+  border-radius: 12px;
+  border: 1px solid #D3D6D9;
+  background: #FFF;
 `;
 
 export const ButtonStack = ({}) => {
@@ -25,7 +25,7 @@ export const ButtonStack = ({}) => {
     <ButtonStackBlock>
       <Button>
         <Image
-          src="/assets/heart.svg"
+          src="/assets/InfoBlock/heart.svg"
           height={24}
           width={24}
           alt="Add to favorite"
@@ -33,7 +33,7 @@ export const ButtonStack = ({}) => {
       </Button>
       <Button>
         <Image
-          src="/assets/download.svg"
+          src="/assets/InfoBlock/download.svg"
           height={24}
           width={24}
           alt="Save the contacts"
@@ -41,7 +41,7 @@ export const ButtonStack = ({}) => {
       </Button>
       <Button>
         <Image
-          src="/assets/file.svg"
+          src="/assets/InfoBlock/file.svg"
           height={24}
           width={24}
           alt="Copy the contacts"
@@ -49,7 +49,7 @@ export const ButtonStack = ({}) => {
       </Button>
       <Button>
       <Image
-        src="/assets/kebab.svg"
+        src="/assets/InfoBlock/kebab.svg"
         height={24}
         width={24}
         alt="Open the menu"
