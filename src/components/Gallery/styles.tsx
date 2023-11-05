@@ -90,7 +90,6 @@ export const ShowMore = styled.button`
   border: none;
   bottom: 0;
   color: #fff;
-  cursor: pointer;
   font-size: 14px;
   font-weight: 500;
   height: 148px;
