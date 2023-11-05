@@ -47,9 +47,10 @@ export const SliderWrapper = styled.div`
   }
 `;
 
-export const Control = styled.div`
+export const Control = styled.button`
   align-items: center;
   background: #FFF;
+  border: none;
   border-radius: 100px;
   box-shadow: 0px 2px 2px 0px rgba(16, 30, 44, 0.04), 0px 4px 12px 0px rgba(16, 30, 44, 0.08);
   display: flex;
