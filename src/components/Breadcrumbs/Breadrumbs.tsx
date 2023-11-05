@@ -1,12 +1,12 @@
 type breadcrumbsProps = {
-  breadcrumbsProps: string[];
+  breadcrumbsData: string[];
 }
 
-export const Breadcrumbs = ({ breadcrumbsProps }: breadcrumbsProps) => {
+export const Breadcrumbs = ({ breadcrumbsData }: breadcrumbsProps) => {
 
   return (
     <>
-      {breadcrumbsProps.map((item: string) => {
+      {breadcrumbsData.map((item: string) => {
         <p>{item}</p>
       })}
     </>

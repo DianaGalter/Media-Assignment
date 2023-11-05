@@ -2,7 +2,7 @@ import { Root, Header, SubHeader } from "./styles";
 import { Statistics } from "./Statistics";
 
 type HeadingProps = {
-    headingProps: {
+    headingData: {
         title: string;
         subtitle: string;
         statistics: {
@@ -12,8 +12,8 @@ type HeadingProps = {
     };
 };
 
-export const Heading = ({ headingProps } : HeadingProps) => {
-    const { title, subtitle, statistics: {views, favorites} } = headingProps;
+export const Heading = ({ headingData } : HeadingProps) => {
+    const { title, subtitle, statistics: {views, favorites} } = headingData;
     return (
         <Root>
             <Header>{title}</Header>

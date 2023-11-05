@@ -1,7 +1,9 @@
 import Head from 'next/head';
+import { Golos_Text } from 'next/font/google';
 import { Heading, Carousel, Breadcrumbs, Description, InfoBlock } from '@/components';
-import { headingData, descriptionData, carouselData, breadcrumbsData } from './data';
+import { headingData, descriptionData, carouselData, breadcrumbsData, infoData } from './data';
 
+const golos = Golos_Text({subsets: ['latin', 'cyrillic']});
 
 export default function Home() {
 
@@ -13,11 +15,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Breadcrumbs breadcrumbsProps={breadcrumbsData}></Breadcrumbs>
-        <Heading headingProps={headingData} />
-        <Carousel carouselProps={carouselData}></Carousel>
-        <InfoBlock></InfoBlock>
+      <main className={golos.className}>
+        <Breadcrumbs breadcrumbsData={breadcrumbsData}></Breadcrumbs>
+        <Heading headingData={headingData} />
+        <Carousel carouselData={carouselData}></Carousel>
+        <InfoBlock infoData={infoData}></InfoBlock>
         <Description descriptionProps={descriptionData}/>
       </main>
     </>

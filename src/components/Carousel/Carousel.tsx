@@ -1,11 +1,11 @@
 type CarouselType = {
-  carouselProps: {
+  carouselData: {
     showMore: string;
   }
 }
 
-export const Carousel = ({ carouselProps }: CarouselType) => {
-  const { showMore } = carouselProps;
+export const Carousel = ({ carouselData }: CarouselType) => {
+  const { showMore } = carouselData;
 
   return <>{ showMore }</>;
 };

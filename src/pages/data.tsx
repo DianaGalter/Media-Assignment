@@ -73,7 +73,7 @@ export const headingData = {
     offer: {
       price: '8 950 000 ₽',
       tag: 'Хорошая цена',
-      button: 'Показать контакты'
+      buttonText: 'Показать контакты'
     },
     seller: {
       title: 'Автодилер',
