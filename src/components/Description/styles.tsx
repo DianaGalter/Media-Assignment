@@ -17,7 +17,7 @@ export const TitleBlock = styled.div`
   font-weight: 500;
   gap: 10px;
   line-height: 28px;
-  width: 232px;
+  width: 234px;
 
   @media (min-width: 1800px) {
     width: 280px;

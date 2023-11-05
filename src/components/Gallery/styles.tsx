@@ -100,6 +100,10 @@ export const ShowMore = styled.button`
   text-align: center;
   width: 194px;
 
+  :hover {
+    background: #16264799;
+  }
+
   @media (min-width: 1800px) {
     height: 168px;
     width: 210px;
