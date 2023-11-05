@@ -8,7 +8,7 @@ const Container = styled.div`
   position: relative;
 `;
 
-const golos = Golos_Text({subsets: ['latin', 'cyrillic']});
+const golos = Golos_Text({subsets: ['latin', 'cyrillic'], display: 'swap'});
 
 export default function Home() {
 
