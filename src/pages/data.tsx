@@ -1,3 +1,7 @@
+/**
+ * Mock data using for sample-page rendering
+ */
+
 export const headingData = {
     title: 'Toyota Land Cruiser, 2020',
     address: 'Южно-Сахалинск',
@@ -6,7 +10,7 @@ export const headingData = {
       favorites: '87 (+2 сегодня)'
     }
   };
-  
+
   export const descriptionData = {
     title: 'Характеристики',
     list: [
