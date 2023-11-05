@@ -11,6 +11,7 @@ Simple sales page block example, which contains mock breadcrumbs, gallery, selle
 
 ## Page:
 
+https://media-assignment-6vtm.vercel.app/
 
 ## Commands:
 
