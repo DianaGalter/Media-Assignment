@@ -1,6 +1,6 @@
 export const headingData = {
     title: 'Toyota Land Cruiser, 2020',
-    subtitle: 'Южно-Сахалинск',
+    address: 'Южно-Сахалинск',
     statistics: {
       views: '344 (+11 сегодня)',
       favorites: '87 (+2 сегодня)'
@@ -84,6 +84,6 @@ export const headingData = {
 
   export const breadcrumbsData = ['Главная', 'Авто', 'Toyota', 'Toyota Land Cruiser'];
 
-  export const carouselData = {
+  export const galleryData = {
     showMore: 'Показать все фото'
   };

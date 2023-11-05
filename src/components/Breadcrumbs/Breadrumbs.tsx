@@ -7,7 +7,7 @@ type breadcrumbsProps = {
 export const Breadcrumbs = ({ breadcrumbsData }: breadcrumbsProps) => {
 const breadcrumbsLength = breadcrumbsData.length - 1;
   return (
-    <>
+    <div>
       {breadcrumbsData.map((item: string, index) => {
         if (index < breadcrumbsLength) {
           return (
@@ -24,6 +24,6 @@ const breadcrumbsLength = breadcrumbsData.length - 1;
         }
         return <Breadcrumb key={`Breadcrumb-${index}`} active>{item}</Breadcrumb>
       })}
-    </>
+    </div>
   );
 };

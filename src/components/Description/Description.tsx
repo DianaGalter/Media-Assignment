@@ -1,4 +1,4 @@
-import { Wrapper, TitleBlock, Block, Item, ItemName } from "./styles";
+import { Root, TitleBlock, Block, Item, ItemName } from "./styles";
 
 type listProps = {
   name: string;
@@ -14,7 +14,7 @@ export const Description = ({ descriptionProps }: DescriptionProps) => {
   const { title, list } = descriptionProps;
 
   return (
-  <Wrapper>
+  <Root>
     <TitleBlock>{ title }</TitleBlock>
     <Block>
       { list[0].map((item, i) => {
@@ -30,6 +30,6 @@ export const Description = ({ descriptionProps }: DescriptionProps) => {
           )
       }) }
     </Block>
-  </Wrapper>
+  </Root>
   );
 }

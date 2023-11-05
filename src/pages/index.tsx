@@ -1,7 +1,12 @@
 import Head from 'next/head';
 import { Golos_Text } from 'next/font/google';
-import { Heading, Carousel, Breadcrumbs, Description, InfoBlock } from '@/components';
-import { headingData, descriptionData, carouselData, breadcrumbsData, infoData } from './data';
+import { Heading, Gallery, Breadcrumbs, Description, InfoBlock } from '@/components';
+import { headingData, descriptionData, galleryData, breadcrumbsData, infoData } from './data';
+import styled from '@emotion/styled';
+
+const Container = styled.div`
+  position: relative;
+`;
 
 const golos = Golos_Text({subsets: ['latin', 'cyrillic']});
 
@@ -17,10 +22,12 @@ export default function Home() {
       </Head>
       <main className={golos.className}>
         <Breadcrumbs breadcrumbsData={breadcrumbsData}></Breadcrumbs>
-        <Heading headingData={headingData} />
-        <Carousel carouselData={carouselData}></Carousel>
-        <InfoBlock infoData={infoData}></InfoBlock>
-        <Description descriptionProps={descriptionData}/>
+        <Container>
+          <InfoBlock infoData={infoData}></InfoBlock>
+          <Heading headingData={headingData} />
+          <Gallery galleryData={galleryData}></Gallery>
+          <Description descriptionProps={descriptionData}/>
+        </Container>
       </main>
     </>
   )

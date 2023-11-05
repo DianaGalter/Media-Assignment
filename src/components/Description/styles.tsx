@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
 
-export const Wrapper = styled.div`
+export const Root = styled.div`
   display: flex;
   color: #25292D;
+  width: 1168px;
 `;
 
 export const TitleBlock = styled.div`
