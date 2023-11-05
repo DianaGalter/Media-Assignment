@@ -1,4 +1,4 @@
-import { Root, Slider, ImageList, SliderWrapper, Control, ShowMore } from "./styles";
+import { Root, Slider, ImageList, SliderWrapper, Control, ImageItem, ShowMore } from "./styles";
 import Image from "next/image";
 
 type GalleryProps = {
@@ -15,8 +15,7 @@ export const Gallery = ({ galleryData }: GalleryProps) => {
       <Slider>
         <Image
           src="/assets/Gallery/1.png"
-          height={520}
-          width={732}
+          layout="fill"
           alt="Car image"
         />
         <SliderWrapper>
@@ -39,42 +38,48 @@ export const Gallery = ({ galleryData }: GalleryProps) => {
         </SliderWrapper>
       </Slider>
       <ImageList>
-        <Image
-          src="/assets/Gallery/2.png"
-          height={168}
-          width={210}
-          alt="Car image preview"
-        />
-        <Image
-          src="/assets/Gallery/3.png"
-          height={168}
-          width={210}
-          alt="Car image preview"
-        />
-        <Image
-          src="/assets/Gallery/4.png"
-          height={168}
-          width={210}
-          alt="Car image preview"
-        />
-        <Image
-          src="/assets/Gallery/5.png"
-          height={168}
-          width={210}
-          alt="Car image preview"
-        />
-        <Image
-          src="/assets/Gallery/6.png"
-          height={168}
-          width={210}
-          alt="Car image preview"
-        />
-        <Image
-          src="/assets/Gallery/7.png"
-          height={168}
-          width={210}
-          alt="Car image preview"
-        />
+        <ImageItem>
+          <Image
+            src="/assets/Gallery/2.png"
+            layout="fill"
+            alt="Car image preview"
+          />
+        </ImageItem>
+        <ImageItem>
+          <Image
+            src="/assets/Gallery/3.png"
+            layout="fill"
+            alt="Car image preview"
+          />
+        </ImageItem>
+        <ImageItem>
+          <Image
+            src="/assets/Gallery/4.png"
+            layout="fill"
+            alt="Car image preview"
+          />
+        </ImageItem>
+        <ImageItem>
+          <Image
+            src="/assets/Gallery/5.png"
+            layout="fill"
+            alt="Car image preview"
+          />
+        </ImageItem>
+        <ImageItem>
+          <Image
+            src="/assets/Gallery/6.png"
+            layout="fill"
+            alt="Car image preview"
+          />
+        </ImageItem>
+        <ImageItem>
+          <Image
+            src="/assets/Gallery/7.png"
+            layout="fill"
+            alt="Car image preview"
+          />
+        </ImageItem>
         <ShowMore>{showMore}</ShowMore>
       </ImageList>
     </Root>

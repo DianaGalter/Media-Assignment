@@ -16,6 +16,10 @@ a {
 }
 
 main {
-  padding: 24px 80px;
+  padding: 12px 40px;
   position: relative;
+
+  @media (min-width: 1800px) {
+    padding: 24px 80px;
+  }
 }

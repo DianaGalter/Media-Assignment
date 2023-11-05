@@ -3,19 +3,25 @@ import styled from '@emotion/styled';
 export const Root = styled.div`
   display: flex;
   color: #25292D;
-  width: 1168px;
+  width: 1024px;
+
+  @media (min-width: 1800px) {
+    width: 1168px;
+  }
 `;
 
 export const TitleBlock = styled.div`
   display: flex;
-  width: 280px;
+  width: 232px;
   align-items: flex-start;
   gap: 10px;
-
-  
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
+
+  @media (min-width: 1800px) {
+    width: 280px;
+  }
 `;
 
 export const Block = styled.div`

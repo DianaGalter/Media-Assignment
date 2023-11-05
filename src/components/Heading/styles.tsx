@@ -4,10 +4,14 @@ import Image from 'next/image';
 export const Root = styled.div`
   margin-top: 40px;
   display: flex;
-  width: 1168px;
+  width: 1024px;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+
+  @media (min-width: 1800px) {
+    width: 1168px;
+  }
 `;
 
 export const Header = styled.h1`
